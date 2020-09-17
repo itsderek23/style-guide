@@ -8,5 +8,5 @@ module.exports = {
     ],
     webpackConfig: './uxpin.webpack.config.js',
   },
-  name: 'Brainly Pencil - Style Guide1',
+  name: 'Brainly Pencil - Style Guide',
 };
