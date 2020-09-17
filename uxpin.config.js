@@ -5,7 +5,6 @@ module.exports = {
         name: 'Components',
         include: [
           'src/components/buttons/Button.jsx',
-          'src/components/buttons/ButtonRound.jsx',
           'src/components/counters/Counter.jsx',
           'src/components/labels/Label.jsx',
           'src/components/avatar/Avatar.jsx',
@@ -14,7 +13,13 @@ module.exports = {
           'src/components/file-handler/FileHandler.jsx',
           'src/components/rating/Rating.jsx',
           'src/components/spinner/Spinner.jsx',
+        ],
+      },
+      {
+        name: 'Containers',
+        include: [
           'src/components/spinner-container/SpinnerContainer.jsx',
+          'src/components/flex/Flex.jsx',
         ],
       },
     ],
