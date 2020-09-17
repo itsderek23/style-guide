@@ -14,6 +14,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,
+        loader: 'url-loader',
+      },
+      {
         test: /\.svg$/,
         loader: 'svg-react-loader',
       },
