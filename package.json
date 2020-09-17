@@ -36,6 +36,7 @@
     "@storybook/addon-links": "^6.0.21",
     "@storybook/addons": "^6.0.21",
     "@storybook/react": "^6.0.21",
+    "@uxpin/merge-cli": "^2.6.2",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^20.0.3",
     "babel-loader": "^8.0.5",

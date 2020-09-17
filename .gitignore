@@ -15,6 +15,7 @@ coverage/
 package-lock.json
 yarn-error.log
 .storybook-static
+.uxpin-merge
 
 # Generated images
 /src/images/*.js
