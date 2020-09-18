@@ -5,6 +5,7 @@ module.exports = {
         name: 'Components',
         include: [
           'src/components/buttons/Button.jsx',
+          'src/components/icons/Icon.jsx',
           'src/components/counters/Counter.jsx',
           'src/components/labels/Label.jsx',
           'src/components/avatar/Avatar.jsx',
@@ -27,5 +28,5 @@ module.exports = {
     wrapper: './src/wrappers/UXPinWrapper.jsx',
     webpackConfig: './uxpin.webpack.config.js',
   },
-  name: 'Brainly Pencil - Style Guide',
+  name: 'Style Guide',
 };
