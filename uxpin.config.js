@@ -20,6 +20,7 @@ module.exports = {
         include: [
           'src/components/spinner-container/SpinnerContainer.jsx',
           'src/components/flex/Flex.jsx',
+          'src/components/box/Box.jsx',
         ],
       },
     ],
