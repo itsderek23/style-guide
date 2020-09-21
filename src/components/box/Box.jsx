@@ -1,7 +1,6 @@
 // @flow strict
 
 import React from 'react';
-import type {Node} from 'react';
 import classNames from 'classnames';
 
 // TODO get list of colors from design team
