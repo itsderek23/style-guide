@@ -7,6 +7,7 @@ module.exports = {
           'src/components/buttons/Button.jsx',
           'src/components/icons/Icon.jsx',
           'src/components/counters/Counter.jsx',
+          'src/components/dropdowns/Dropdown.jsx',
           'src/components/labels/Label.jsx',
           'src/components/avatar/Avatar.jsx',
           'src/components/bubble/Bubble.jsx',
@@ -14,6 +15,7 @@ module.exports = {
           'src/components/file-handler/FileHandler.jsx',
           'src/components/rating/Rating.jsx',
           'src/components/spinner/Spinner.jsx',
+          'src/components/form-elements/Select/Select.jsx',
         ],
       },
       {
