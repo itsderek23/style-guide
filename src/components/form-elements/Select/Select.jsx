@@ -1,28 +1,19 @@
 // @flow strict
 
 import React from 'react';
-import classnames from 'classnames';
-import Icon from '../../icons/Icon';
+import SelectM from '../Select';
 
-type OptionsPropsType = {
+// @flow strict
+
+export type OptionsPropsType = {
   value: string,
   text: string,
   ...
 };
 
-type SelectSizeType = 'm' | 'l';
+export type SelectSizeType = 'm' | 'l';
 
-type SelectColorType = 'default' | 'white';
-
-export const COLOR = Object.freeze({
-  DEAFAULT: 'default',
-  WHITE: 'white',
-});
-
-export const SIZE = Object.freeze({
-  M: 'm',
-  L: 'l',
-});
+export type SelectColorType = 'default' | 'white';
 
 export type SelectPropsType = {
   /**
@@ -76,60 +67,8 @@ export type SelectPropsType = {
   ...
 };
 
-const Select = (props: SelectPropsType) => {
-  const {
-    valid,
-    invalid,
-    capitalized,
-    fullWidth,
-    value,
-    size,
-    color,
-    className,
-    options = [],
-    ...additionalProps
-  } = props;
-
-  if (valid === true && invalid === true) {
-    throw {
-      name: 'WrongValidation',
-      message: 'Select can be either valid or invalid!',
-    };
-  }
-
-  const selectClass = classnames(
-    'sg-select',
-    {
-      'sg-select--valid': valid,
-      'sg-select--invalid': invalid,
-      'sg-select--capitalized': capitalized,
-      'sg-select--full-width': fullWidth,
-      [`sg-select--${String(color)}`]: color,
-      [`sg-select--${String(size)}`]: size && size !== 'm',
-    },
-    className
-  );
-  const optionsElements = options.map(({value, text}) => (
-    <option key={value} value={value}>
-      {text}
-    </option>
-  ));
-
-  return (
-    <div className={selectClass}>
-      <div className="sg-select__icon">
-        <Icon
-          type="arrow_down"
-          color="gray-secondary"
-          size={size === 'l' ? 24 : 16}
-        />
-      </div>
-
-      <select {...additionalProps} className="sg-select__element" value={value}>
-        {optionsElements}
-      </select>
-    </div>
-  );
-};
+function Select(props: SelectPropsType) {
+  return <SelectM {...props} />;
+}
 
 export default Select;
