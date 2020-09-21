@@ -21,7 +21,7 @@ export type CounterPropsType = {
    *            text
    *          </Counter>
    */
-  children: React.Node,
+  children: React$Node,
   /**
    * Specify type of the counter that you want to use, two types for now
    * @example <Counter type="basic">

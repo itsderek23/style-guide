@@ -142,7 +142,7 @@ type PropsType = $ReadOnly<{
    *            example label
    *          </Label>
    */
-  children: Node,
+  children: React$Node,
   /**
    * Additional class names
    */

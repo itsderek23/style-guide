@@ -81,7 +81,7 @@ export type FlexPropsType = {
    *          </Flex>
    *
    */
-  children: Node,
+  children: React$Node,
   /**
    * Html tag used as container
    */

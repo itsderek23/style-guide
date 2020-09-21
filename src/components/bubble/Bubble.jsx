@@ -46,7 +46,7 @@ export const BUBBLE_COLOR = {
 };
 
 type BubblePropsType = {
-  children: Node,
+  children: React$Node,
   className?: ?string,
   alignment?: AligmentType,
   direction: DirectionType,

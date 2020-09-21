@@ -93,7 +93,7 @@ type PropsType = $ReadOnly<{
    *            text
    *          </FileHandler>
    */
-  children: Node,
+  children: React$Node,
   ...
 }>;
 

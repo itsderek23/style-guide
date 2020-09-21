@@ -355,7 +355,7 @@ export type IconPropsType =
       /**
        * Children to be rendered inside Icon
        */
-      children: Node,
+      children: React$Node,
       /**
        * Additional class names
        */
