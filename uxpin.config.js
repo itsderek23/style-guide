@@ -17,6 +17,7 @@ module.exports = {
           'src/components/spinner/Spinner.jsx',
           'src/components/form-elements/merge/Select/Select.jsx',
           'src/components/form-elements/merge/Input/Input.jsx',
+          'src/components/form-elements/merge/TextArea/TextArea.jsx',
         ],
       },
       {
