@@ -1,9 +1,7 @@
 // @flow strict
 
 import React from 'react';
-import SelectM from '../Select';
-
-// @flow strict
+import SelectM from '../../Select';
 
 export type OptionsPropsType = {
   value: string,

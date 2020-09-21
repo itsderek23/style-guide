@@ -15,7 +15,8 @@ module.exports = {
           'src/components/file-handler/FileHandler.jsx',
           'src/components/rating/Rating.jsx',
           'src/components/spinner/Spinner.jsx',
-          'src/components/form-elements/Select/Select.jsx',
+          'src/components/form-elements/merge/Select/Select.jsx',
+          'src/components/form-elements/merge/Input/Input.jsx',
         ],
       },
       {
