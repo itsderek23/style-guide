@@ -1,7 +1,6 @@
 // @flow strict
 
-import React from 'react';
-import type {Node} from 'react';
+import * as React from 'react';
 import cx from 'classnames';
 
 export const BUTTON_SIZE = Object.freeze({
@@ -62,12 +61,12 @@ type ButtonColorType =
 
 type ButtonIconType =
   | {
-      icon?: Node,
-      iconOnly?: null,
+      icon?: React$Node,
+      iconOnly?: boolean,
       reversedOrder?: boolean,
     }
   | {
-      icon: Node,
+      icon: React$Node,
       iconOnly?: boolean,
       reversedOrder?: null,
     };
@@ -98,7 +97,8 @@ export type ButtonPropsType = {
    *            button
    *          </Button>
    */
-  ...ButtonColorType,
+  type: $Values<typeof BUTTON_TYPE>,
+  toggle?: null,
   /**
    * You can render icon inside each type of button on the left side
    * @example <Button
@@ -117,7 +117,9 @@ export type ButtonPropsType = {
    *            Login with Facebook
    *          </Button>
    */
-  ...ButtonIconType,
+  icon: React$Node,
+  iconOnly?: boolean,
+  reversedOrder?: boolean,
   /**
    * Children to be rendered inside Button
    * @example <Button
@@ -127,7 +129,7 @@ export type ButtonPropsType = {
    *            button
    *          </Button>
    */
-  children?: Node,
+  children?: React$Node,
   /**
    * There are three sizes options for buttons, not need to be specify, default is m
    * @example <Button type="solid" size="m">
