@@ -3,6 +3,7 @@ const path = require('path');
 const SOURCE_DIR = path.join(__dirname, 'src');
 
 module.exports = {
+  target: 'web',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
