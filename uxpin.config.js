@@ -15,11 +15,13 @@ module.exports = {
           'src/components/file-handler/FileHandler.jsx',
           'src/components/rating/Rating.jsx',
           'src/components/spinner/Spinner.jsx',
+          'src/components/flash-messages/FlashMessage.jsx',
           'src/components/form-elements/merge/Select/Select.jsx',
           'src/components/form-elements/merge/Input/Input.jsx',
           'src/components/form-elements/merge/TextArea/TextArea.jsx',
           'src/components/form-elements/merge/Radio/Radio.jsx',
           'src/components/form-elements/merge/Checkbox/Checkbox.jsx',
+          'src/components/search/Search.jsx',
         ],
       },
       {
