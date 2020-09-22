@@ -40,7 +40,7 @@ module.exports = {
         ],
       },
     ],
-    wrapper: './src/wrappers/UXPinWrapper.js',
+    wrapper: './src/wrappers/UXPinWrapper.jsx',
     webpackConfig: './uxpin.webpack.config.js',
   },
   name: 'Brainly - Style Guide',
