@@ -22,6 +22,8 @@ module.exports = {
           'src/components/form-elements/merge/Radio/Radio.jsx',
           'src/components/form-elements/merge/Checkbox/Checkbox.jsx',
           'src/components/search/Search.jsx',
+          'src/components/subject-icons/merge/SubjectIcon/SubjectIcon.jsx',
+          'src/components/math-symbols/merge/MathSymbol/MathSymbol.jsx',
         ],
       },
       {
