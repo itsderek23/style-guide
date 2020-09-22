@@ -2,7 +2,6 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import '../../images/icons';
 
 export type IconTypeType =
   | 'academic_cap'
