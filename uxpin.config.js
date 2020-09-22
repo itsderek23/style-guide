@@ -2,16 +2,23 @@ module.exports = {
   components: {
     categories: [
       {
+        name: 'Basics',
+        include: [
+          'src/components/subject-icons/merge/SubjectIcon/SubjectIcon.jsx',
+          'src/components/math-symbols/merge/MathSymbol/MathSymbol.jsx',
+          'src/components/logo/Logo.jsx',
+          'src/components/icons/Icon.jsx',
+        ],
+      },
+      {
         name: 'Components',
         include: [
           'src/components/buttons/Button.jsx',
-          'src/components/icons/Icon.jsx',
           'src/components/counters/Counter.jsx',
           'src/components/dropdowns/Dropdown.jsx',
           'src/components/labels/Label.jsx',
           'src/components/avatar/Avatar.jsx',
           'src/components/bubble/Bubble.jsx',
-          'src/components/logo/Logo.jsx',
           'src/components/file-handler/FileHandler.jsx',
           'src/components/rating/Rating.jsx',
           'src/components/spinner/Spinner.jsx',
@@ -22,8 +29,6 @@ module.exports = {
           'src/components/form-elements/merge/Radio/Radio.jsx',
           'src/components/form-elements/merge/Checkbox/Checkbox.jsx',
           'src/components/search/Search.jsx',
-          'src/components/subject-icons/merge/SubjectIcon/SubjectIcon.jsx',
-          'src/components/math-symbols/merge/MathSymbol/MathSymbol.jsx',
         ],
       },
       {
