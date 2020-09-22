@@ -1,6 +1,8 @@
 const path = require('path');
 
 const SOURCE_DIR = path.join(__dirname, 'src');
+const SOURCE_DOCS_DIR = path.join(SOURCE_DIR, 'docs');
+const SOURCE_COMPONENTS_DIR = path.join(SOURCE_DIR, 'components');
 
 module.exports = {
   output: {
@@ -9,10 +11,19 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    modules: [__dirname, 'node_modules'],
     extensions: ['*', '.js', '.jsx'],
+    modules: [
+      SOURCE_COMPONENTS_DIR,
+      SOURCE_DOCS_DIR,
+      path.join(SOURCE_DIR, 'images'),
+      __dirname,
+      'node_modules',
+    ],
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
-
+  devtool: 'eval',
   module: {
     rules: [
       {

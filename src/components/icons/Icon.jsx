@@ -2,6 +2,7 @@
 
 import React from 'react';
 import classNames from 'classnames';
+import '../../images/icons';
 
 export type IconTypeType =
   | 'academic_cap'
@@ -309,31 +310,28 @@ export const SIZE = [
   10,
 ];
 
-export type IconPropsType =
-  | {
-      /**
-       * Additional class names
-       */
-      className?: ?string,
-      /**
-       * Icons colors example, see more in SG interactive
-       * @example <Icon color="dark" type="answer" />
-       * @see color="adaptive" https://styleguide.brainly.com/latest/docs/interactive.html?color=adaptive#icons
-       */
-      color?: ?IconColorType,
-      /**
-       * Icons size example, see more in SG interactive
-       * @example <Icon size="46" type="answer" />
-       * @see size="46" https://styleguide.brainly.com/latest/docs/interactive.html?size=46#icons
-       */
-      size?: ?IconSizeType,
-      /**
-       * Icons types example, see more in SG interactive
-       * @example <Icon size="46" type="answer" />
-       * @see type="heart" https://styleguide.brainly.com/latest/docs/interactive.html?type=heart#icons
-       */
-      type: IconTypeType,
-      /**
+export type IconPropsType = {
+  /**
+   * Children to be rendered inside Icon
+   */
+  children?: React$Node,
+  /**
+   * Additional class names
+   */
+  className?: ?string,
+  /**
+   * Icons colors example, see more in SG interactive
+   * @example <Icon color="dark" type="answer" />
+   * @see color="adaptive" https://styleguide.brainly.com/latest/docs/interactive.html?color=adaptive#icons
+   */
+  color?: ?IconColorType,
+  /**
+   * Icons size example, see more in SG interactive
+   * @example <Icon size="46" type="answer" />
+   * @see size="46" https://styleguide.brainly.com/latest/docs/interactive.html?size=46#icons
+   */
+  size?: ?IconSizeType,
+  /**
       * Option to change tag to span, which allows correct HTML structure
       * @example  <Button
                     type="secondary"
@@ -347,47 +345,10 @@ export type IconPropsType =
                     />
                   </Button>
       */
-      tagType?: IconTagType,
-      ...
-    }
-  | {
-      /**
-       * Children to be rendered inside Icon
-       */
-      children: React$Node,
-      /**
-       * Additional class names
-       */
-      className?: ?string,
-      /**
-       * Icons colors example, see more in SG interactive
-       * @example <Icon color="dark" type="answer" />
-       * @see color="adaptive" https://styleguide.brainly.com/latest/docs/interactive.html?color=adaptive#icons
-       */
-      color?: ?IconColorType,
-      /**
-       * Icons size example, see more in SG interactive
-       * @example <Icon size="46" type="answer" />
-       * @see size="46" https://styleguide.brainly.com/latest/docs/interactive.html?size=46#icons
-       */
-      size?: ?IconSizeType,
-      /**
-      * Option to change tag to span, which allows correct HTML structure
-      * @example  <Button
-                    type="secondary"
-                  >
-                    Get +50
-                    <Icon
-                      type={iconTypes.POINTS}
-                      color="dark"
-                      size={16}
-                      tagType="span"
-                    />
-                  </Button>
-      */
-      tagType?: IconTagType,
-      ...
-    };
+  tagType?: IconTagType,
+  type: IconTypeType,
+  ...
+};
 
 const Icon = ({
   color,
