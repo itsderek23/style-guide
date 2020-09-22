@@ -21,7 +21,7 @@ export const TEXTAREA_COLOR = {
 
 export type TextareaPropsType = {
   // $FlowFixMe any generic prop types here broke autocomplete, so let's leave it as is for now
-  type?: string,
+  type?: string | (any => React$Node),
   /**
    * Additional function to set ref for textarea
    */
@@ -30,7 +30,7 @@ export type TextareaPropsType = {
    * Optional specification for input value
    * @example <Textarea value="some example value" />
    */
-  value?: mixed,
+  value?: React$Node,
   /**
    * There are two color variants for form elements, default does not have to be specified
    * @example <Textarea color="white" placeholder="placeholder" />
