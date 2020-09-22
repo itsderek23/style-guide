@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 import classnames from 'classnames';
 import Star from './subcomponents/Star';
 import RateCounter from './subcomponents/RateCounter';
+import '../../main.scss';
+
 
 type RatingSizeType = 's' | 'xs';
 
